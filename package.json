@@ -18,7 +18,8 @@
     "test-watch": "jest --watch --collectCoverage",
     "coverage": "npm run tidy:coverage && jest --collectCoverage",
     "audit": "npm run prettier && npm build && npm run lint && npm test",
-    "coveralls": "cat ./coverage/lcov.info | coveralls"
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "prepack": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -43,7 +44,8 @@
     "@types/js-yaml": "^3.12.3",
     "@types/strip-ansi": "^5.2.1",
     "ansi-styles": "^4.2.1",
-    "bunyan": "^1.8.12",
+    "bunyan": "^1.8.15",
+    "chalk": "^4.1.1",
     "js-yaml": "^3.13.1",
     "moment": "^2.24.0",
     "slackbots": "^1.2.0",
@@ -57,7 +59,6 @@
     "@types/node": "^13.11.1",
     "babel-core": "^6.26.3",
     "babel-jest": "^25.3.0",
-    "chalk": "^4.0.0",
     "coveralls": "^3.0.11",
     "dotenv": "^8.2.0",
     "inquirer": "^7.1.0",
