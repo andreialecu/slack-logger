@@ -142,7 +142,6 @@ export default class SlackLogger extends Transform {
     // build options
     this.options = {
       version: "",
-      token: "",
       name: "Slack Logger",
       channel: "general",
       iconUrl: "https://image.ibb.co/iOSThT/log_local.png",
